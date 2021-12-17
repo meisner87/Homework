@@ -1,0 +1,56 @@
+/*tag selector*/
+label {
+    color: red;
+}
+
+/*Id selector*/
+#email {
+    background-color: lawngreen;
+}
+
+/*class selector*/
+.space-above {
+    margin-top: 20px;
+    border: solid;
+    border-radius: 20px;
+    padding: 10px 10px 10px 20px; /*top,left,right,bottom*/
+    display: grid;
+
+}
+
+/*descendent selector*/
+#mainForm div {
+    margin-left: 0%;
+}
+
+/*child selector*/
+#mainContainer > form {
+    color: black;
+}
+
+/*next element selector*/
+#emptyDiv + h1 {
+    color: blue;
+    margin-left: 0%;
+    font-family: Orbitron;
+    text-decoration: underline greenyellow;
+    text-align: left;
+}
+
+/*combines selector*/
+input, select, #emptyDiv {
+    margin-left: 0%;
+}
+
+/*attribute selector*/
+[value=rice] {
+    background-color: aqua;
+}
+
+/*instructions*/
+#instructions {
+    position: relative;
+}
+.hidden{
+    display: none;
+}

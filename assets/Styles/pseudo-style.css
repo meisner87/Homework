@@ -1,0 +1,37 @@
+em:hover{
+    font-family: Orbitron;
+    font-size: xx-large;
+}
+ol:first-child{
+    color: red;
+}
+a:link{
+    color: lawngreen;
+    font-family: Orbitron;
+}
+a:visited{
+    color: crimson;
+    font-family: "Bauhaus 93";
+}
+
+#secondImage{
+    border-radius: 20px;
+    opacity: 75%;
+}
+/*mobile phones*/
+@media screen and (max-width: 480px){
+    #firstImage{
+        transform: rotate(180deg);
+        border-radius: 3px;
+        opacity: 40%;
+}
+
+
+/*tablets*/
+@media screen and (max-width: 480px) and (max-width: 720px) {
+    #firstImage{
+        transform: rotate(45deg);
+        opacity: 90%;
+    }
+}
+}

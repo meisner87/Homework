@@ -3,49 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <title>Forms-Example </title>
+    <link href="../assets/Styles/Style.css" type="text/css" rel="stylesheet"/>
+
 </head>
 <body>
-<div>
+<div id="mainContainer">
+    <div id="emptyDiv"></div>
+    <h1>Student signup</h1>
+    <div id="instructions">
+        <p> Please fill in the form to register</p>
+    </div>
     <form id="mainForm" name="mainForm" method="post" action="home.html">
-        <label for="firstName">First Name: </label><input type="text" id="firstName" name="firstName" maxlength="10" minlength="5" value="eg. John Smith" required />
-        <br/><br/>
-        <label for="age">Age</label>
-        <input type="number" id="age" name="age" min="5" max="50">
-        <br/><br/>
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="=eg. abc@gmail.com" required>
-        <br/><br/>
-        <label for="Password">Password</label>
-        <input type="password" id="password" name="password" required>
-        <br/><br/>
-        <label for="joinDate">Joining date</label>
-        <input type="date" id="Joindate" name="JoinDate"/>
-        <br/><br/>
-        <label for="male">Gender:</label>
-        <input type="radio" id="male" name="gender"> Male
-        <input type="radio" id="female" name="gender" checked/> Female
-        <br/><br/>
-        <label for="mathematics">Favorite subjects</label>
-        <input type="checkbox" id="mathematics" name="favoriteSubjects" /> Mathematics
-        <input type="checkbox" id="Science" name="favoriteSubjects" /> Science
-        <input type="checkbox" id="software" name="favoriteSubjects" /> Software
-        <br/><br/>
-        <label for="address">Address:</label>
-        <textarea id="address" name="address" cols="10" rows="5"></textarea>
-        <br/><br/>
-
-        <label for="favoriteFood">Favorite food</label>
-        <select id="favoriteFood" name="favoriteFood">
-        <option value="rice">Rice</option>
-        <option value="pizza" selected>Pizza</option>
-        <option value="burger" disabled>Burger</option>
-        </select>
+        <div><label for="firstName">First Name: </label><input type="text" id="firstName" name="firstName"
+                                                               maxlength="10"
+                                                               minlength="5" value="eg. John Smith" required/></div>
+        <div class="space-above">
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age" min="5" max="50"></div>
+        <div class="space-above">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="=eg. abc@gmail.com" required></div>
+        <div class="space-above">
+            <label for="Password">Password</label>
+            <input type="password" id="password" name="password" required></div>
+        <div class="space-above">
+            <label for="joinDate">Joining date</label>
+            <input type="date" id="Joindate" name="JoinDate"/></div>
+        <div class="space-above">
+            <label for="male">Gender:</label>
+            <input type="radio" id="male" name="gender"> Male
+            <input type="radio" id="female" name="gender" checked/> Female
+        </div>
+        <div class="space-above">
+            <label for="mathematics">Favorite subjects</label>
+            <input type="checkbox" id="mathematics" name="favoriteSubjects"/> Mathematics
+            <input type="checkbox" id="Science" name="favoriteSubjects"/> Science
+            <input type="checkbox" id="software" name="favoriteSubjects"/> Software
+        </div>
+        <div class="hidden">
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" cols="10" rows="5"></textarea></div>
+        <div class="space-above">
+            <label for="favoriteFood">Favorite food</label>
+            <select id="favoriteFood" name="favoriteFood">
+                <option value="rice">Rice</option>
+                <option value="pizza" selected>Pizza</option>
+                <option value="burger" disabled>Burger</option>
+            </select></div>
         <input type="hidden" id="active" name="active" value="yes"/>
-        <br/><br/>
-        <input type="submit" value="Sign in"/>
-        <input type="reset" value="Clear form"/>
-        <input type="button" value="Cancel"/>
-
+        <div class="space-above">
+            <input type="submit" value="Sign in"/>
+            <input type="reset" value="Clear form"/>
+            <input type="button" value="Cancel"/></div>
     </form>
 </div>
 </body>
